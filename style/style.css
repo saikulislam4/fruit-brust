@@ -1,0 +1,38 @@
+/* google font lato */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Lato:wght@400;700;900&display=swap');
+
+/* common css style start */
+*{
+    outline: none;
+}
+
+/* primary color and opacity class */
+.primary-opacity{
+    color: rgba(18, 18, 18, 0.60);
+}
+.secondary-opacity{
+    color: rgba(18, 18, 18, 0.60);
+}
+
+/* primary bg class */
+.primary-bg{
+    background: #F85559;
+}
+
+/* primary btn class */
+.btn-primary{
+    color: #fff;
+    background: #F85559;
+    border-radius: 8px;
+    padding: 20px 30px;
+    text-transform: capitalize;
+
+
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
