@@ -14,11 +14,12 @@
 
 /* primary bg class */
 .primary-bg{
-    background: #F85559 !important;
+    background: #F85559;
 }
 
 /* primary btn class */
-.btn-primary{
+
+.primary-btn{
     color: #fff;
     background: #F85559;
     border-radius: 8px;
@@ -27,6 +28,14 @@
 
 
 }
+.btn-modified{
+    padding: 16px 30px;
+    color: #fff;
+    background: #F85559;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
 
 body{
     font-family: 'Lato', sans-serif;
