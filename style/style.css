@@ -10,13 +10,11 @@
 .primary-opacity{
     color: rgba(18, 18, 18, 0.60);
 }
-.secondary-opacity{
-    color: rgba(18, 18, 18, 0.60);
-}
+
 
 /* primary bg class */
 .primary-bg{
-    background: #F85559;
+    background: #F85559 !important;
 }
 
 /* primary btn class */

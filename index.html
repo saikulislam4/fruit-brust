@@ -2,96 +2,213 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit-Brust</title>
-    <!-- tailwind and daisyUi -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/b7f823b944.js" crossorigin="anonymous"></script>
-    <!-- style css -->
-    <link rel="stylesheet" href="./style/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit-Brust</title>
+  <!-- tailwind and daisyUi -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/b7f823b944.js" crossorigin="anonymous"></script>
+  <!-- style css -->
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <header class="max-w-[1440px] mx-auto">
-        <div class="bg-none md:primary-bg grid py-[30px] lg:grid-cols-3 my-[50px] items-center rounded-full">
-            <!-- navbar link -->
-            <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <!-- navbar logo -->
-            <div class="justify-center hidden">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li><a>Parent</a></li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              
-              
-            </div>
-            <!-- logo -->
-            <div class="flex justify-center">
-                <a href="#"><img src="./images/logo.png" alt="log"></a>
-                <h3 class="ml-4 text-[40px] font-bold text-white">Fruit Burst</h3>
-              </div>
-           <!-- navbar search bar -->
-            <div class="hidden flex justify-end mr-[50px]">
-             <input class="py-5 px-7 rounded-full primary-opacity w-[400px]" type="search" placeholder="Search here">
-            </div>
-          </div>
-    </header >
+  <!-- navbar -->
+  <header class="max-w-[1440px] mx-auto">
+    <div
+      class="px-16 lg:px-0 navbar  lg:grid-cols-3 my-0  bg-white lg:bg-[#F85559] rounded-full lg:my-[50px] py-[30px] bg-base-100  justify-between lg:justify-normal">
+      <!-- navbar link -->
+      <div class="navbar-center ml-[50px] hidden lg:flex">
+        <ul class="menu menu-horizontal text-white text-lg capitalize px-1 gap-5">
+          <a href="#">home</a>
+          <a href="#">about us</a>
+          <a href="#">shop</a>
+          <a href="#">all fruits</a>
 
-    <div class="navbar max-w-[1440px] mx-auto bg-base-100 justify-between">
-        <div class="navbar-start">
-  
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li tabindex="0">
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end hidden">
-          <a class="btn">Button</a>
-        </div>
-        <div class="dropdown ">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
-          </div>
+        </ul>
       </div>
-    
+      <!-- navbar logo -->
+      <div class="navbar-start lg:flex lg:justify-end ">
+        <a href="#"><img src="./images/logo.png" alt="log"></a>
+        <h3 class="ml-4 text-xl  lg:text-[40px] text-black font-bold lg:text-white">Fruit Burst</h3>
+      </div>
+
+      <!-- navbar search bar -->
+      <div class="navbar-end lg:grid justify-end hidden  mr-[50px]">
+        <input class="py-5 px-7 rounded-full primary-opacity min-w-[300px] xl:w-[400px]" type="search"
+          placeholder="Search here">
+      </div>
+      <!-- dropdown -->
+      <div class="dropdown ">
+        <label tabindex="0" class="lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0"
+          class="menu menu-sm grid justify-end -ml-20 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  w-32">
+          <li><a>Item 1</a></li>
+          <li><a>Parent</a></li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="relative mb-64">
+      <div class="carousel w-full">
+        <!-- banner 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- banner 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- banner 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!-- banner 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner4.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+      </div>
+      <div
+        class="absolute w-4/5 m-auto shadow-lg left-0 right-0 grid grid-cols-5 gap-24 px-16 -bottom-32 py-12 px-70px rounded-lg bg-white">
+        <!-- single item 1 -->
+        <div class="text-center">
+          <img src="./images/fruit4.png" alt="fruit">
+          <h3 class="text-xl primary-opacity mt-4 font-medium capitalize">Strawberry</h3>
+        </div>
+
+        <!-- single item 2 -->
+        <div class="text-center">
+          <img src="./images/fruit2.png" alt="fruit">
+          <h3 class="text-xl primary-opacity mt-4 font-medium capitalize">Orange</h3>
+        </div>
+
+        <!-- single item 3 -->
+        <div class="text-center">
+          <img src="./images/fruit3.png" alt="fruit">
+          <h3 class="text-xl primary-opacity mt-4 font-medium capitalize">Mango</h3>
+        </div>
+
+        <!-- single item 4 -->
+        <div class="text-center">
+          <img src="./images/fruit1.png" alt="fruit">
+          <h3 class="text-xl primary-opacity mt-4 font-medium capitalize">grape</h3>
+        </div>
+
+        <!-- single item 5 -->
+        <div class="text-center">
+          <img src="./images/fruit5.png" alt="fruit">
+          <h3 class="text-xl primary-opacity mt-4 font-medium capitalize">Pomegranate</h3>
+        </div>
+
+
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Deal of the day section -->
+    <div class="max-w-[1440px] mx-auto">
+      <!-- title  -->
+      <div class="flex items-center justify-between">
+        <div>
+          <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+          <p class="primary-opacity font-medium mt-6">Contrary to popular belief, is not simply random text. It has
+            roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+
+        <!-- date section -->
+        <div class="flex mb-12">
+          <!-- days -->
+          <div class=" flex text-center  ">
+            <div class="  relative px-6">
+              <h2 class="text-5xl font-extrabold">29</h2>
+              <h3 class="primary-opacity font-medium mt-2 capitalize"> days</h3>
+              <div class="h-6 w-1 border-dashed border-r-4 border-black absolute right-0 top-4"></div>
+            </div>
+          </div>
+
+          <!-- hours -->
+          <div class=" flex text-center  ">
+            <div class="  relative px-6">
+              <h2 class="text-5xl font-extrabold">20</h2>
+              <h3 class="primary-opacity font-medium mt-2 capitalize"> hours</h3>
+              <div class="h-6 w-1 border-dashed border-r-4 border-black absolute right-0 top-4"></div>
+            </div>
+          </div>
+
+          <!-- minutes -->
+          <div class=" flex text-center ">
+            <div class="  relative px-6">
+              <h2 class="text-5xl font-extrabold">31</h2>
+              <h3 class="primary-opacity font-medium mt-2 capitalize"> minutes</h3>
+              <div class="h-6 w-1 border-dashed border-r-4 border-black absolute right-0 top-4"></div>
+            </div>
+          </div>
+
+          <!-- seconds -->
+          <div class=" flex text-center ">
+            <div class="  relative px-6 pr-0">
+              <h2 class="text-5xl font-extrabold">31</h2>
+              <h3 class="primary-opacity font-medium mt-2 capitalize"> seconds</h3>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- container -->
+      <div class="grid  lg:grid-cols-4 gap-6 mt-12">
+        <!-- single item -->
+        <div class="p-12 rounded-lg border-2">
+          <!-- image and price -->
+          <div class="p-12 border-b-2 pt-0">
+            <img src="./images/fruit5.png" alt="fruit">
+          </div>
+          <h2 class=""> 12.90$ - 18.85$</h2>
+
+          <!-- details and button -->
+          <div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </main>
+
+
 </body>
 
 </html>
