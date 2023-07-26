@@ -40,6 +40,12 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+.team-bg{
+    background-image: url(../images/team.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
 
 
 
