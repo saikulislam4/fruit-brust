@@ -46,6 +46,16 @@ body{
     background-repeat: no-repeat;
 
 }
+.btn-circle{
+    background: black;
+    color: white;
+    border: none;
+}
+.btn-circle:hover{
+    background: black;
+    color: white;
+
+}
 
 
 
